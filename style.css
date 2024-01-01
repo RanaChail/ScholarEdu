@@ -246,3 +246,107 @@ body{
         width: 85%;
     }
 }
+
+
+/*------------------------------ Feature Section ---------------------------*/
+.feature-container{
+    max-width: 100%;
+    background-color: white;
+    margin-top: 7rem;
+    border-top-left-radius: 2rem;
+    border-top-right-radius: 2rem;
+    box-shadow: 0px -6px 12px rgba(0,0,0,0.3);
+}
+
+.feature-title{
+    padding: 2.5rem 1.5rem;
+    font-size: 3rem;
+    color: var(--primary-color);
+    animation: slideFromLeft 1s ease forwards;
+}
+
+.feature-grid{
+    max-width: 1240px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    padding: 1rem 2rem;
+    gap: 1.8rem;
+}
+
+.grid-container{
+    background-color: rgb(0, 0, 0);
+    border-radius: 1rem;
+    padding: 1rem 1.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1.2rem;
+    box-shadow: 0px 2px 4px rgba(0,0,0,0.2);
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.grid-container:hover{
+    transform: scale(1.025);
+    box-shadow: 0px 3px 5px rgba(0,0,0,0.3);
+}
+
+.grid-img{
+    height: 2.3rem;
+    width: 2.3rem;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.5rem;
+    border-radius: 50%;
+}
+
+.grid-icon{
+    height: 100%;
+    width: 100%;
+}
+
+.grid-heading{
+    font-size: 1rem;
+    color: white;
+}
+
+.grid-description{
+    font-size: 0.8rem;
+    color: white;
+}
+
+.icon1{
+    background-color: #3874ff;
+}
+.icon2{
+    background-color: #00e0c6;
+}
+.icon3{
+    background-color: #00cc22;
+}
+.icon4{
+    background-color: #b87400;
+}
+.icon5{
+    background-color: #ff3838;
+}
+
+.calculate-btn{
+    text-decoration: none;
+    color: white;
+    font-weight: 600;
+    background-color: var(--link-color);
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 1rem;
+    transition: all 0.3s ease;
+}
+
+.calculate-btn:hover{
+    background-color: var(--accent-color);
+    color: var(--text-color);
+}

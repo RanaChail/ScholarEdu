@@ -1,45 +1,136 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>ScholarEdu - Calculate your Result</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
     <!--============================ Navbar Section =========================-->
     <section class="header">
-        <header class="header-content">
-            <a href="#home" class="main-logo-content">
-                <img src="./images/scholaredu.svg" alt="logo" loading="lazy" class="main-logo">
-                <span class="main-logo-text">ScholarEdu</span>
-            </a>
-            <nav class="navbar">
-                <a href="#home" class="nav-items">Home</a>
-                <a href="#about" class="nav-items">About</a>
-                <a href="#feedback" class="nav-items">Feedback</a>
-                <a href="#contact" class="nav-items">Contact Us</a>
-            </nav>
-            <button type="button" class="menu-button">
-                <img src="./images/menu.svg" alt="menu-img" class="menu-icon" />
-            </button>
-        </header>
+      <header class="header-content">
+        <a href="#home" class="main-logo-content">
+          <img
+            src="./images/scholaredu.svg"
+            alt="logo"
+            loading="lazy"
+            class="main-logo"
+          />
+          <span class="main-logo-text">ScholarEdu</span>
+        </a>
+        <nav class="navbar">
+          <a href="#home" class="nav-items">Home</a>
+          <a href="#about" class="nav-items">About</a>
+          <a href="#feedback" class="nav-items">Feedback</a>
+          <a href="#contact" class="nav-items">Contact Us</a>
+        </nav>
+        <button type="button" class="menu-button">
+          <img src="./images/menu.svg" alt="menu-img" class="menu-icon" />
+        </button>
+      </header>
     </section>
 
     <!--=========================== Home Section ============================-->
     <section class="home">
-        <main class="home-content">
-            <div class="home-left">
-                <p class="home-title">Very Proud to Introduce</p>
-                <h1 class="main-text">We are MAKAUTIAN</h1>
-                <a href="#" class="feedback-btn">Send Feedback</a>
-            </div>
-            <div class="home-right">
-                <div class="image-container">
-                    <img src="./images/hero-image.jpg" alt="home-icon" class="home-img">
-                </div>
-            </div>
-        </main>
+      <main class="home-content">
+        <div class="home-left">
+          <p class="home-title">Very Proud to Introduce</p>
+          <h1 class="main-text">We are MAKAUTIAN</h1>
+          <a href="#" class="feedback-btn">Send Feedback</a>
+        </div>
+        <div class="home-right">
+          <div class="image-container">
+            <img
+              src="./images/hero-image.jpg"
+              alt="home-icon"
+              class="home-img"
+            />
+          </div>
+        </div>
+      </main>
     </section>
-</body>
+
+    <!--========================= Feature Section =========================-->
+    <section class="feature-container">
+      <div class="feature-title-container">
+        <h2 class="feature-title">F E A T U R E S</h2>
+      </div>
+      <div class="feature-grid">
+        <!-- Grid 1 -->
+        <div class="grid-container icon1">
+          <div class="grid-img">
+            <img src="./images/icon-blue.svg" alt="" class="grid-icon" />
+          </div>
+          <div class="grid-heading">
+            <h3>SGPA/YGPA to %</h3>
+          </div>
+          <div class="grid-description">
+            Enter you SGPA/YGPA/CGPA of a Semester to Calculate your Percentage
+            (%).
+          </div>
+          <a href="#calculate" class="calculate-btn">Calculate</a>
+        </div>
+
+        <!-- Grid 2 -->
+        <div class="grid-container icon2">
+          <div class="grid-img">
+            <img src="./images/icon-cyan.svg" alt="" class="grid-icon" />
+          </div>
+          <div class="grid-heading">
+            <h3>Mid Sem to %</h3>
+          </div>
+          <div class="grid-description">
+            Calculate Grade Point Avarage (GPA) and Percentage in the Middle of
+            Course/Semester.
+          </div>
+          <a href="#calculate" class="calculate-btn">Calculate</a>
+        </div>
+
+        <!-- Grid 3 -->
+        <div class="grid-container icon3">
+          <div class="grid-img">
+            <img src="./images/icon-green.svg" alt="" class="grid-icon" />
+          </div>
+          <div class="grid-heading">
+            <h3>SGPA to DGPA(%)</h3>
+          </div>
+          <div class="grid-description">
+            Calculate DGAP Percentage from SGPA or CGPA point.
+          </div>
+          <a href="#calculate" class="calculate-btn">Calculate</a>
+        </div>
+
+        <!-- Grid 4 -->
+        <div class="grid-container icon4">
+          <div class="grid-img">
+            <img src="./images/icon-yellow.svg" alt="" class="grid-icon" />
+          </div>
+          <div class="grid-heading">
+            <h3>Yearly Marks to %</h3>
+          </div>
+          <div class="grid-description">
+            This Tool is helpful for each year student to calculate their marks
+            Percentage for Scholarship Form Fill Up at the time of Renewal, and
+            Eligibility Check.
+          </div>
+          <a href="#calculate" class="calculate-btn">Calculate</a>
+        </div>
+
+        <!-- Grid 5 -->
+        <div class="grid-container icon5">
+          <div class="grid-img">
+            <img src="./images/icon-red.svg" alt="" class="grid-icon" />
+          </div>
+          <div class="grid-heading">
+            <h3>Calculate SGPA/CGPA</h3>
+          </div>
+          <div class="grid-description">
+            Calculate your SGPA for a perticular Subject through Credit Point and Credit Index.
+          </div>
+          <a href="#calculate" class="calculate-btn">Calculate</a>
+        </div>
+      </div>
+    </section>
+  </body>
 </html>
