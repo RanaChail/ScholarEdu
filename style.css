@@ -350,3 +350,9 @@ body{
     background-color: var(--accent-color);
     color: var(--text-color);
 }
+
+@media screen and (max-width: 970px) {
+    .feature-grid{
+        grid-template-columns: repeat(1,1fr);
+    }
+}
