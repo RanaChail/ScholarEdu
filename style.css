@@ -355,4 +355,7 @@ body{
     .feature-grid{
         grid-template-columns: repeat(1,1fr);
     }
+    .feature-title{
+        font-size: 2rem;
+    }
 }
