@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;400;500;600;700&display=swap');
+
+:root {
+    --primary-color: #0da2ab;
+    --accent-color: #7ce3ff;
+    --text-color: #333333;
+    --link-color: #176087;
+    --background-color: #e1f4fb;
+    --light-gray: #f0f0f0;
+    --gray: #808080;
+    --dark-gray: #555;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Inter', sans-serif;
+    text-decoration: none;
+}
+
+body{
+    height: 100vh;
+    text-align: center;
+    background-color: var(--background-color);
+    padding: 0.1rem 0.3rem;
+    overflow-x: hidden;
+}
+
+
+/*------------------------------ Header Section -----------------------------*/
+.header{
+    max-width: 1240px;
+    margin: 0 auto;
+    padding: 1rem;
+}
+
+.header-content{
+    max-width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 0.5rem;
+}
+
+.main-logo-content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 0.7rem;
+}
+
+.main-logo{
+    width: 2.3rem;
+    height: 2.3rem;
+}
+
+.main-logo-text{
+    font-size: 1.75rem;
+    font-weight: bold;
+    color: var(--text-color);
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 4.5rem;
+}
+
+.nav-items{
+    color: var(--gray);
+    font-size: 1rem;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.nav-items:hover{
+    color: var(--primary-color);
+}
+
+.menu-button{
+    display: none;
+    height: 2rem;
+    width: 2rem;
+    background-color: var(--background-color);
+    border: none;
+}
+
+.menu-icon{
+    width: 100%;
+    height: 100%;
+}
+
+@media screen and (max-width: 800px) {
+    .navbar{
+        display: none;
+    }
+    .menu-button{
+        display: block;
+    }
+}
+
+
+/*----------------------------- About Us Section -----------------------------*/
+.about-container{
+    width: 100%;
+    background: transparent;
+    margin-top: 2rem;
+}
+
+.about-content{
+    display: flex;
+    width: 1240px;
+    height: 52vh;
+    margin: 0 auto;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.about-heading{
+    font-size: 3.5rem;
+    text-align: left;
+    font-weight: bold;
+    margin: 0 2rem;
+    color: var(--primary-color);
+    animation: slideFromLeft 1s ease forwards;
+    opacity: 0;
+}
+
+.about-description{
+    font-size: 1.3rem;
+    margin: 2rem;
+    text-align: left;
+    width: 60%;
+    color: var(--gray);
+    animation: slideFromLeft 1s ease forwards;
+    opacity: 0;
+}
+
+@keyframes slideFromLeft {
+    0% {
+        opacity: 0;
+        transform: translateX(-100%);
+    }
+    100%{
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
